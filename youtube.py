@@ -410,11 +410,7 @@ def clean_process():
         #channel_df['PublishDate'] = channel_df['publishDate'].dt.strftime("%Y-%m-%d")
         #channel_df['PublishDate'] = pd.to_datetime(channel_df['PublishDate'] , format="%Y-%m-%d")
         
-        st.dataframe(channel_df['publishDate'])
-        st.write(channel_df['publishDate'].dtypes)
-        st.write(channel_df['viewCount'].dtypes)
-        st.write(channel_df['videoCount'].dtypes)
-        st.write(channel_df['subscriberCount'].dtypes)
+        
         
         
         video_df['Video_ViewCount'] = video_df['Video_ViewCount'].astype(int)
